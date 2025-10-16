@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Selection</title>
+</head>
+<body>
+    <h1>Dropdown Selection</h1>
+    <form>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada" selected>Canada</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="ontario">Ontario</option>
+            <option value="quebec" selected>Quebec</option>
+            <option value="bc">British Columbia</option>
+        </select>
+        <br><br>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="toronto">Toronto</option>
+            <option value="montreal" selected>Montreal</option>
+            <option value="vancouver">Vancouver</option>
+        </select>
+        <br><br>
+        <label for="tourist-place">Favorite Tourist Place:</label>
+        <select id="tourist-place" name="tourist-place">
+            <option value="niagara">Niagara Falls</option>
+            <option value="banff">Banff National Park</option>
+            <option value="old-montreal" selected>Old Montreal</option>
+        </select>
+    </form>
+    <p>Your selected location is: Old Montreal, Montreal, Quebec, Canada.</p>
+</body>
+</html>
