@@ -1,0 +1,48 @@
+/* CSS for Long Article */
+
+body {
+    font-family: serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.subheading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+article p {
+    margin-bottom: 1.5rem;
+}
+
+article p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.5rem;
+    line-height: 1;
+}
+
+article p::first-line {
+    font-weight: bold;
+}
+
+mark {
+    background-color: #ffd700;
+    padding: 0.2rem;
+}
+
+blockquote {
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+    margin: 1.5rem 0;
+    padding: 1rem;
+}

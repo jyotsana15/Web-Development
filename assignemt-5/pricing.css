@@ -1,0 +1,56 @@
+/* CSS for Pricing Table */
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* To make columns of equal height */
+    padding: 2rem;
+}
+
+.pricing-plan {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.popular {
+    border-color: #ff7e5f;
+    border-width: 3px;
+}
+
+.pricing-plan h2 {
+    font-size: 2rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    flex-grow: 1; /* To make the feature list grow and push the button down */
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background-color: #ff7e5f;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
