@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #607d8b; /* Blue Grey */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.comparison-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 10px solid;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+    margin-top: 0;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.box p {
+    margin: 10px 0;
+}
+
+/* content-box (default) */
+.content-box {
+    box-sizing: content-box;
+    background-color: #ffecb3; /* Light Yellow */
+    border-color: #ffc107; /* Amber */
+}
+.content-box h3 {
+    border-color: #ffc107;
+}
+
+/* border-box */
+.border-box {
+    box-sizing: border-box;
+    background-color: #c8e6c9; /* Light Green */
+    border-color: #4caf50; /* Green */
+}
+.border-box h3 {
+    border-color: #4caf50;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .comparison-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}

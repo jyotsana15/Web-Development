@@ -1,0 +1,83 @@
+/* General Body and Header Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #5e35b1; /* Deep Purple */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Selector Demonstrations --- */
+
+/* Element Selector: Targets all <p> elements */
+p {
+    color: #333;
+}
+
+/* Class Selector: Targets all elements with class="highlight" */
+.highlight {
+    background-color: #fff59d; /* Light Yellow */
+    border-left: 5px solid #fbc02d; /* Yellow */
+    padding: 10px;
+}
+
+/* ID Selector: Targets the element with id="main-content" */
+#main-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Attribute Selector: Targets <a> elements with a target="_blank" attribute */
+a[target="_blank"] {
+    color: #1e88e5; /* Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Combinator Demonstrations --- */
+
+/* Descendant Combinator: Targets any <p> that is a descendant of a .container */
+.container p {
+    color: #d81b60; /* Pink */
+}
+
+/* Child Combinator: Targets any <ul> that is a direct child of a .container */
+.container > ul {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Adjacent Sibling Combinator: Targets the first <p> immediately following a .container */
+.container + p {
+    font-style: italic;
+    color: #00897b; /* Teal */
+}
+
+/* General Sibling Combinator: Targets all <p> elements that are siblings of and come after a .container */
+.container ~ p {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}

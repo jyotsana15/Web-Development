@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+header {
+    background-color: #00796b; /* Teal */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.example-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.example {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.example h3 {
+    color: #004d40; /* Darker Teal */
+    margin-top: 0;
+    border-bottom: 2px solid #b2dfdb; /* Light Teal */
+    padding-bottom: 10px;
+}
+
+.example p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* :hover pseudo-class */
+.hover-link {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.hover-link:hover {
+    color: #d32f2f; /* Red on hover */
+}
+
+/* :focus pseudo-class */
+.focus-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.focus-input:focus {
+    border-color: #00796b;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+    outline: none;
+}
+
+/* :active pseudo-class */
+.active-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #00796b;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.active-button:active {
+    background-color: #004d40; /* Darker on active */
+    transform: scale(0.95);
+}
+
+/* :nth-child() pseudo-class */
+.example ul {
+    list-style: none;
+    padding: 0;
+}
+.example li {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+.example li:nth-child(even) {
+    background-color: #e0f2f1; /* Light Teal for even items */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+}

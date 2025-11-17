@@ -1,0 +1,132 @@
+/* Consistent Box-Sizing */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #e8eaf6; /* Light Indigo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #3f51b5; /* Indigo */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ui-image {
+    border-radius: 50%;
+    border: 3px solid #c5cae9; /* Lighter Indigo */
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3f51b5;
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #303f9f; /* Darker Indigo */
+}
+
+footer {
+    background-color: #f5f5f5;
+    color: #777;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive behavior */
+@media (max-width: 450px) {
+    .page-container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}

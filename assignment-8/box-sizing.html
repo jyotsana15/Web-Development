@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="box-sizing.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison</h1>
+    </header>
+
+    <main>
+        <div class="comparison-container">
+            <div class="box content-box">
+                <h3>box-sizing: content-box (Default)</h3>
+                <p>Width: 200px</p>
+                <p>Padding: 20px</p>
+                <p>Border: 10px</p>
+                <p><strong>Total Width: 200px + 40px (padding) + 20px (border) = 260px</strong></p>
+            </div>
+
+            <div class="box border-box">
+                <h3>box-sizing: border-box</h3>
+                <p>Width: 200px</p>
+                <p>Padding: 20px</p>
+                <p>Border: 10px</p>
+                <p><strong>Total Width: 200px (padding and border are included)</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Box-Sizing Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>

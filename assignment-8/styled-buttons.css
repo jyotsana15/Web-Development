@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d81b60; /* Pink */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Primary Button Style */
+.btn-primary {
+    background-color: #d81b60; /* Pink */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c2185b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Secondary Button Style */
+.btn-secondary {
+    background-color: #5e35b1; /* Deep Purple */
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #4527a0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Outline Button Style */
+.btn-outline {
+    background-color: transparent;
+    color: #d81b60;
+    border-color: #d81b60;
+}
+
+.btn-outline:hover {
+    background-color: #d81b60;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(216, 27, 96, 0.2);
+}
+
+/* Focus Pseudo-class */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(216, 27, 96, 0.4);
+}
+
+/* Disabled Pseudo-class */
+.btn:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
