@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #4a69bd;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    flex: 1 1 100%; /* Default to full width */
+}
+
+.card:hover {
+    background-color: #e0e0e0;
+}
+
+/* Desktop: 4 columns */
+@media (min-width: 901px) {
+    .card {
+        flex-basis: calc(25% - 20px);
+    }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 601px) and (max-width: 900px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}

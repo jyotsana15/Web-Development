@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eef;
+}
+
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.profile-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.profile-card:nth-child(2) img {
+    filter: sepia(100%);
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card:hover img {
+    filter: none;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
