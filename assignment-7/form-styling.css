@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.styled-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+    /* Default outline styles */
+    outline: 2px solid transparent; /* Start with transparent outline */
+    outline-offset: 2px; /* Offset the outline */
+    transition: outline-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Focus styling */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group textarea:focus {
+    outline-color: #007bff; /* Change outline color on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Subtle shadow on focus */
+}
+
+/* Different outline styles for demonstration */
+/* Example: dotted outline for text input */
+.form-group input[type="text"] {
+    outline-style: dotted;
+    outline-color: #28a745;
+}
+
+/* Example: dashed outline for email input */
+.form-group input[type="email"] {
+    outline-style: dashed;
+    outline-color: #ffc107;
+}
+
+/* Example: double outline for password input */
+.form-group input[type="password"] {
+    outline-style: double;
+    outline-color: #dc3545;
+}
+
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}

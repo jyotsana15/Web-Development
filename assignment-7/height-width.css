@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #333;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Box 1: px units, min-height */
+.box-1 {
+    width: 200px;
+    height: 150px;
+    min-height: 100px; /* Demonstrates min-height */
+    background-color: #e74c3c; /* Distinct background color */
+}
+
+/* Box 2: % units, max-width, overflow: auto */
+.box-2 {
+    width: 50%; /* Responsive width */
+    max-width: 400px; /* Demonstrates max-width */
+    height: 200px;
+    overflow: auto; /* Demonstrates overflow property */
+    background-color: #2ecc71; /* Distinct background color */
+}
+
+/* Box 3: vh and em units, overflow: hidden */
+.box-3 {
+    width: 250px;
+    height: 20vh; /* Height in viewport height units */
+    font-size: 1.2em; /* Font size in em units */
+    overflow: hidden; /* Demonstrates overflow: hidden */
+    background-color: #3498db; /* Distinct background color */
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width Practice Layout</title>
+    <link rel="stylesheet" href="height-width.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Box 1: px units, min-height -->
+        <div class="box box-1">
+            <p>Box 1: Fixed dimensions (200px width, 150px height) with min-height.</p>
+        </div>
+
+        <!-- Box 2: % units, max-width -->
+        <div class="box box-2">
+            <p>Box 2: Responsive width (50%) with max-width and overflow: auto.</p>
+            <p>This content might overflow if the box is too small, demonstrating overflow property.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Box 3: vh and em units, overflow: hidden -->
+        <div class="box box-3">
+            <p>Box 3: Height in vh (20vh) and font-size in em (1.2em). Overflow is hidden.</p>
+            <p>This text will be clipped if it exceeds the box height due to overflow: hidden.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</body>
+</html>

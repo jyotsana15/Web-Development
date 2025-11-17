@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding-top: 80px; /* Offset for fixed header */
+}
+
+section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Linear Gradient Background */
+.linear-gradient {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe); /* Blue to Cyan */
+}
+
+/* Radial Gradient Background */
+.radial-gradient {
+    background: radial-gradient(circle at center, #fddb92, #d1fdff); /* Yellow to Light Blue */
+}
+
+/* Parallax Effect with Fixed Background */
+.parallax-gradient {
+    background: linear-gradient(to right, #a18cd1, #fbc2eb); /* Purple to Pink */
+    background-attachment: fixed; /* Parallax effect */
+    background-size: cover;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

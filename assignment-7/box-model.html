@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="box-model.css">
+</head>
+<body>
+    <header>
+        <h1>Box Model Exploration</h1>
+    </header>
+
+    <main>
+        <div class="box-model-container">
+            <div class="outer-margin">
+                <p class="label">Margin</p>
+                <div class="border-layer">
+                    <p class="label">Border</p>
+                    <div class="padding-layer">
+                        <p class="label">Padding</p>
+                        <div class="content-layer">
+                            <p class="label">Content</p>
+                            <p>This is the actual content of the box.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="box-sizing-demo">
+            <h2>Box-Sizing Demonstration</h2>
+            <div class="box-sizing-wrapper">
+                <div class="box-sizing-example content-box">
+                    <h3>content-box (Default)</h3>
+                    <p>Width: 200px, Padding: 20px, Border: 5px. Total width will be 200 + 20*2 + 5*2 = 250px.</p>
+                </div>
+                <div class="box-sizing-example border-box">
+                    <h3>border-box</h3>
+                    <p>Width: 200px, Padding: 20px, Border: 5px. Total width will be 200px (padding and border included).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Box Model Insights. All rights reserved.</p>
+    </footer>
+</body>
+</html>

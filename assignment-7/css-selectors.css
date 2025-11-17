@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Attribute Selectors --- */
+/* Selects all input elements with type="text" */
+input[type="text"] {
+    border: 2px solid #3498db;
+    padding: 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Selects all anchor tags whose href attribute starts with "https" */
+a[href^="https"] {
+    color: #27ae60;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Selects all anchor tags whose href attribute ends with ".zip" */
+a[href$=".zip"] {
+    background-color: #f39c12;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* --- Pseudo-classes --- */
+/* Styles for a button on hover */
+button:hover {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+/* Styles for an input element when it is in focus */
+.focus-input:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+    outline: none;
+}
+
+/* Styles for every odd list item */
+ul li:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+/* Styles for every even list item */
+ul li:nth-child(even) {
+    background-color: #bdc3c7;
+}
+
+/* --- Pseudo-elements --- */
+/* Styles the first letter of a paragraph */
+.first-letter-line::first-letter {
+    font-size: 2.5em;
+    color: #e67e22;
+    float: left;
+    margin-right: 5px;
+    line-height: 1;
+}
+
+/* Styles the first line of a paragraph */
+.first-letter-line::first-line {
+    font-weight: bold;
+    color: #c0392b;
+}
+
+/* --- Combinators --- */
+.parent {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Child Combinator: Selects all <p> elements that are direct children of an element with class "parent" */
+.parent > p {
+    color: #2980b9;
+    font-style: italic;
+}
+
+/* Descendant Combinator: Selects all <p> elements that are descendants of an element with class "parent" */
+.parent p {
+    margin-bottom: 5px;
+}
+
+/* Adjacent Sibling Combinator: Selects the first <p> element immediately preceded by a <div> */
+div + p {
+    background-color: #f1c40f;
+    padding: 5px;
+    border-left: 5px solid #f39c12;
+}
+
+/* General Sibling Combinator: Selects all <p> elements that are siblings of a <div> element */
+div ~ p {
+    text-decoration: underline;
+    color: #8e44ad;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+}

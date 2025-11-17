@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent; /* For underline effect */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.main-nav li a:hover {
+    background-color: #575757;
+    border-bottom: 3px solid #007bff; /* Highlight on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.main-nav li a.active {
+    background-color: #007bff;
+    border-bottom: 3px solid #007bff;
+    font-weight: bold;
+}
+
+main {
+    flex: 1; /* Takes up remaining space */
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Responsive design: stack vertically below 700px */
+@media (max-width: 700px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        width: 100%; /* Full width for stacked items */
+        text-align: center;
+    }
+
+    .main-nav li a {
+        padding: 10px;
+        border-bottom: 1px solid #575757; /* Separator for stacked items */
+    }
+
+    .main-nav li:last-child a {
+        border-bottom: none; /* No border for the last item */
+    }
+}

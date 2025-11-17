@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors Demonstration</title>
+    <link rel="stylesheet" href="css-selectors.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS Selectors</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Attribute Selectors</h2>
+            <input type="text" placeholder="Text input">
+            <input type="email" placeholder="Email input">
+            <a href="https://www.google.com">Google (HTTPS)</a>
+            <a href="http://example.com">Example (HTTP)</a>
+            <a href="https://github.com/user/repo.zip">Download (ZIP)</a>
+        </section>
+
+        <section>
+            <h2>Pseudo-classes and Pseudo-elements</h2>
+            <button>Hover Me</button>
+            <input type="text" class="focus-input" placeholder="Focus on me">
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+            </ul>
+            <p class="first-letter-line">This paragraph demonstrates ::first-letter and ::first-line pseudo-elements. The first letter will be styled differently, and the entire first line will also have a distinct style. This helps in creating visually appealing text blocks and emphasizing initial parts of content.</p>
+        </section>
+
+        <section>
+            <h2>Combinators</h2>
+            <div class="parent">
+                <p>Direct child paragraph</p>
+                <span>
+                    <p>Descendant paragraph</p>
+                </span>
+                <p>Another direct child paragraph</p>
+            </div>
+            <p>Adjacent sibling paragraph</p>
+            <div>
+                <p>General sibling paragraph</p>
+            </div>
+            <p>Another general sibling paragraph</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CSS Selectors Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
