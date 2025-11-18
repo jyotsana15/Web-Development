@@ -1,0 +1,7 @@
+.pricing-card {
+    transition: transform 0.2s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
